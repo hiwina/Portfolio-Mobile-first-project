@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.desktop {
+  display: none;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 44px;
+  width: 100%;
+}
+
+.toolbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 24px;
+  width: 100%;
+  margin: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.toolbar-container a {
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  color: #28352f;
+}
+
+.toolbar-container a:hover {
+  color: #e71010;
+}
+
+.back-image {
+  background-image: url(image/header-illsutration-mobile@2x.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.headline-desk-container {
+  display: none;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+  gap: 58px;
+  width: 327px;
+  margin: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.primary-headline h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  align-self: start;
+  line-height: 52px;
+  font-style: normal;
+  color: #172b4d;
+  font-weight: 700;
+  text-align: center;
+   width: 327px;
+  height: 192px; 
+  align-items: center;
+}
+
+.h1color {
+  color: rgb(59, 200, 122);
+}
+
+.supporting-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #172b4d;
+  text-align: center;
+   width: 327px;
+  height: 164px; 
+}
+
+
+.menu-bar {
+  display: none;
+}
+
+.socialt {
+  width: 170.17px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+}
+#desktop-image{
+  display: none;
+}
+
+.desktop-socialt {
+  display: none;
+}
+.scroll {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 32px;
+  align-self: center;
+}
+
