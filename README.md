@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project 1 Portfolio 
+# Portfolio-Mobile-first-project
 
 > Web design for mobile version
+> A page that contain navigation bar and headline of portfolio page.
 
 ## Built With
 
