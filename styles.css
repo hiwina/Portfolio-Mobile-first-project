@@ -405,12 +405,17 @@
   background: #52bee9;
 }
 
+.language-detail .get-resume:visited {
+  color: #dfe1e6;
+  background: #008552;
+}
+
 .language-detail .get-resume button:enabled {
-  background: #172b4d;
+  background: #36B37F;
 }
 
 .language-detail .get-resume:hover {
-  background: #1dc9df;
+  background: #36B37F;
 }
 
 .back-image-2 {
