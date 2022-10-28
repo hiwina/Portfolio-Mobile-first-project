@@ -126,7 +126,7 @@
   width: 379px;
   align-items: center;
   margin: auto;
-  margin-left: 1px;
+  margin-left:0%;
 }
 
 .primary-text {
@@ -319,17 +319,17 @@
   text-decoration: none;
 }
 
-.project-detail .see-project:active {
+.project-detail .see-project:visited {
   color: #dfe1e6;
-  background: #52bee9;
+  background: #008552;
 }
 
 .project-detail .see-project button:enabled {
-  background: #172b4d;
+  background: #36b37f;
 }
 
 .project-detail .see-project:hover {
-  background: #1dc9df;
+  background: #36b37f;
 }
 
 .about {
@@ -428,7 +428,7 @@
   background-image: url(image/illustration\ -\ about\ me-mobile.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  left: 365px;
+  left: 305px;
   display: flex;
   flex-direction: row;
   position: absolute;
