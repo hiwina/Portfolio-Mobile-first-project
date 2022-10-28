@@ -68,7 +68,7 @@
   margin: auto;
   padding-left: 24px;
   padding-right: 24px;
-  margin-left: 0px;
+  margin-left: 1px;
 }
 
 .primary-headline h1 {
@@ -119,14 +119,14 @@
   align-self: center;
 }
 
-/* -- Project and About Section-- */ 
+/* -- Project and About Section-- */
 
 .recent-works-container {
   display: grid;
   width: 379px;
   align-items: center;
   margin: auto;
-  margin-left: 0px;
+  margin-left: 1px;
 }
 
 .primary-text {
@@ -415,7 +415,7 @@
 
 .back-image-2 {
   background-image: url(image/illustration-\ about\ me.png);
-  background-size: contain; 
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -423,10 +423,10 @@
   background-image: url(image/illustration\ -\ about\ me-mobile.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  left: 365px; 
-  display: flex; 
+  left: 365px;
+  display: flex;
   flex-direction: row;
-  position: absolute; 
+  position: absolute;
   width: 90.87px;
   height: 100.94px;
 }
