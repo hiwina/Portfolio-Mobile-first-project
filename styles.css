@@ -53,9 +53,11 @@
 .headline-desk-container {
   display: none;
 }
+
 .headline .back-image {
   width: 375px;
 }
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -117,7 +119,7 @@
   align-self: center;
 }
 
-/*-- Project and About Section*/
+/* -- Project and About Section-- */ 
 
 .recent-works-container {
   display: grid;
@@ -337,7 +339,7 @@
   width: 351px;
   gap: 24px;
   padding-top: 48px;
-  padding-left: 42px; 
+  padding-left: 42px;
   padding-right: 12px;
 }
 
