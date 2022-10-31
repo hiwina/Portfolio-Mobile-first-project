@@ -258,7 +258,7 @@
 }
 
 .project-detail ul {
-  padding: 0;
+  padding: 12px;
   width: 305px;
   height: 32px;
   background: #fff;
@@ -267,6 +267,7 @@
 
 .project-detail li {
   float: left;
+  gap: 24px;
   padding: 8px 12px;
   border-radius: 4px;
   border: none;
