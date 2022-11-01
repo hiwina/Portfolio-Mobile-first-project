@@ -508,16 +508,12 @@
   letter-spacing: 0.03em;
 }
 
-
 .contact {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 64px 24px;
   gap: 58px;
-  /* height: 725px; */
-  /* margin-top: 5650px; */
-  /* margin: auto; */
   width: 327px;
 }
 
@@ -531,7 +527,7 @@
   color: #172b4d;
 }
 
-.desktop-form-input{
+.desktop-form-input {
   display: none;
 }
 
@@ -596,9 +592,11 @@
 #message::placeholder {
   color: #091e42;
 }
+
 .fristname{
   display: none;
 }
+
 .back-img4 {
   background-image: url(image/illustration-contact-form.jpg);
   background-size: contain;
@@ -637,8 +635,6 @@
 }
 
 .contact-social .footer-email a {
-  /* width: 375px; */
-  /* height: 189px; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -646,7 +642,6 @@
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  /* margin-left: 77px; */
   margin: auto;
 }
 
@@ -678,7 +673,6 @@
 .footer-section {
   width: 327px;
   padding: 12px;
-  /* margin: auto; */
 }
 
 #contact-email {
@@ -686,8 +680,7 @@
 }
 
 .footer-email {
-  /* width: 327px;*/
-  height: 180px; 
+  height: 180px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
