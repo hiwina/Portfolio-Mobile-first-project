@@ -726,7 +726,7 @@
     background-size: 100% 100%;
     width: 1542px;
     height: 1000px;
-  } 
+  }
 
   .desktop-nav {
     margin: auto;
@@ -734,7 +734,7 @@
     top: 1px;
   }
 
-.menu-bar {
+  .menu-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -749,20 +749,20 @@
   }
 
   .toolbar-container {
-    display:none;
+    display: none;
   }
 
   .headline-desk-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0px;
+    padding: 120px 1px;
     position: absolute;
     left: 400px;
     top: 80px;
     margin: auto;
   }
-  
+
   #desktop-headline h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -824,7 +824,7 @@
   }
 
   .headline .back-image {
-  display: none;
+    display: none;
   }
 
   #desktop-recent-works {
@@ -875,22 +875,22 @@
     background-image: url(image/illustration-about-me-2-desktop@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width:1400px;
-    height:100px;
-    margin-top:50px;
-  } 
+    width: 1400px;
+    height: 100px;
+    margin-top: 50px;
+  }
 
   #desktop-about-cards {
     grid-template-columns: 1fr 1fr 1fr;
     width: 1200px;
-    margin-left: 0px;
+    margin-left: 1px;
   }
 
   .contact {
-    position:absolute;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    width:1400px;
+    width: 1400px;
     height: inherit;
     margin-top: 700px;
   }
@@ -922,7 +922,7 @@
 
   #message {
     box-sizing: border-box;
-    width:684px;
+    width: 684px;
     height: 114px;
     background: #fff;
     border: 1px solid #60c095;
@@ -944,10 +944,10 @@
     left: 1px;
   }
 
-  .footer-section {  
+  .footer-section {
     position: absolute;
     width: 155%;
-    left: 0px;
+    left: 1px;
     top: 4000px;
   }
 
@@ -962,7 +962,7 @@
     top: 16px;
   }
 
-  .socialt {
+  .footer-section .socialt {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -976,5 +976,4 @@
   #footer-image {
     display: none;
   }
-
 }
