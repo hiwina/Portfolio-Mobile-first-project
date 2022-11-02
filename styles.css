@@ -638,6 +638,10 @@
   color: #fff;
 }
 
+hr {
+  display: none;
+}
+
 .contact-social .footer-email a {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -957,6 +961,10 @@
     height: 40px;
     left: 620px;
     top: 16px;
+  }
+
+  hr {
+    display: block;
   }
 
   .footer-section .socialt {
