@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.desktop {
+.desktop-nav {
   display: none;
 }
 
@@ -704,6 +704,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+  
   .navigation {
     display: none;
   }
