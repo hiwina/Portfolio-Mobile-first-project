@@ -704,10 +704,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .desktop-nav {
-    display: block;
-  }
-  
   .navigation {
     display: none;
   }
@@ -729,6 +725,7 @@
   }
 
   .desktop-nav {
+    display: block;
     margin: auto;
     height: 72px;
     top: 1px;
