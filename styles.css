@@ -704,7 +704,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .navigation {
     display: none;
   }
@@ -712,12 +711,11 @@
   .toolbar-container
   {
     display: none;
-  
   }
+
   .primary-headline
   {
     display: none;
-  
   }
 
   .back-image {
@@ -726,20 +724,19 @@
 
   .desktop-image {
     background-image: url(image/Header-llustration-desktop@2x.png);
-    background-size:cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 1542px;
     height: 1000px;
   } 
 
-.desktop-nav {
-  margin: auto;
-  height: 72px;
-  top: 0px;
-}
+  .desktop-nav {
+    margin: auto;
+    height: 72px;
+    top: 1px;
+  }
 
-.menu-bar{
+.menu-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -789,7 +786,7 @@
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: #172B4D;
+    color: #172b4d;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -799,7 +796,7 @@
   }
 
   .h1color {
-    color: rgb(59, 200, 122);
+    color: #3bc87a;
   }
 
   .supporting-text {
@@ -828,8 +825,7 @@
     margin: auto;
   }
   
-.headline back-image
-{
+.headline back-image {
   display: none;
 }
 
@@ -859,8 +855,8 @@
 }
 
 .about {
- width: 1200px; 
-height: 100%; 
+  width: 1200px;
+  height: 100%;
 }
 
 .about-supporting-text {
@@ -875,7 +871,7 @@ height: 100%;
   width: 269px;
   height: 244px;
   margin-top: -90px;
-} 
+}
 
 .back-image-2 {
   background-image: url(image/illustration-about-me-2-desktop@2x.png);
@@ -905,7 +901,7 @@ height: 100%;
   width: 40%;
   font-weight: 700;
   font-size: 30px;
-  line-height: 52px; 
+  line-height: 52px;
   align-items: center;
 }
 
@@ -947,25 +943,25 @@ height: 100%;
   width: 107%;
   height: 100%;
   top: 400px;
-  left: 0px;
+  left: 1px;
 }
 
 .footer-section {  
-position: absolute;
-width: 155%;
-left: 0px;
-top: 4000px;
+  position: absolute;
+  width: 155%;
+  left: 0px;
+  top: 4000px;
 }
 
 .contact-social {
-display: flex;
-flex-direction: row;
-align-items: center;
-position: absolute;
-width: 200px;
-height: 40px;
-left: 620px;
-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: 620px;
+  top: 16px;
 }
 
 .socialt {
