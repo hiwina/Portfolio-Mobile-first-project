@@ -708,10 +708,6 @@
     display: none;
   }
 
-  .toolbar-container {
-    display: none;
-  }
-
   .primary-headline {
     display: none;
   }
@@ -899,7 +895,7 @@
     width: 40%;
     font-weight: 700;
     font-size: 30px;
-    line-height: 52px;
+    line-height: 58px;
     align-items: center;
   }
 
