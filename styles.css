@@ -824,7 +824,7 @@
   }
 
   #desktop-recent-works {
-    width: 1200PX;
+    width: 1200px;
     height: 100%;
   }
 
@@ -891,7 +891,7 @@
     margin-top: 700px;
   }
 
-  .contact h3 {
+  .contact .h3 {
     width: 40%;
     font-weight: 700;
     font-size: 30px;
