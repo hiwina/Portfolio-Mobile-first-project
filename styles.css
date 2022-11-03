@@ -769,7 +769,7 @@ hr {
     width: 820px;
     left: 260px;
     top: 72px;
-    padding: 180px 0px 180px 0px;
+    padding: 180px 1px 180px 1px;
   }
 
   #desktop-headline h1 {
@@ -904,7 +904,7 @@ hr {
     margin-left: 100px;
   }
 
-  .about-primary-text h3 {
+  .about-primary-text .h3 {
     width: 447px;
     justify-content: center;
     padding-left: 160px;
@@ -1019,7 +1019,7 @@ hr {
 
   .contact-social {
     align-items: center;
-    width: 1200px; 
+    width: 1200px;
   }
 
   .desktop-line {
@@ -1046,5 +1046,4 @@ hr {
   #footer-image {
     display: none;
   }
-  
 }
