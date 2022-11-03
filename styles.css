@@ -1004,7 +1004,7 @@ hr {
     background-size: contain;
     background-repeat: no-repeat;
     width: 1372.8px;
-    height: 1000px;
+    height: 500px;
     left: 1px;
     top: 3700px;
   }
@@ -1014,12 +1014,12 @@ hr {
     width: 100%;
     left: 1px;
     top: 4200px;
-    height: 42%;
   }
 
   .contact-social {
     align-items: center;
     width: 1200px;
+    height: 40px;
   }
 
   .desktop-line {
@@ -1037,6 +1037,11 @@ hr {
     flex-direction: row;
     align-items: center;
     padding-top: 24px;
+    height: 20px;
+  }
+
+  .footer-email a {
+    display: none;
   }
 
   .footer-email #contact-email {
