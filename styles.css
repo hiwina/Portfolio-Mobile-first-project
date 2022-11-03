@@ -412,7 +412,7 @@ body {
 
 .language-detail .get-resume:active {
   color: #dfe1e6;
-  background: #C5E9DA;
+  background: #c5e9da;
 }
 
 .language-detail .get-resume:visited {
@@ -677,7 +677,6 @@ hr {
 
 .form-section .form-btn:hover {
   background: #c5e9da;
-  ;
 }
 
 .contact-social {
@@ -735,8 +734,6 @@ hr {
     background-size: contain;
     width: 1372.8px;
     height: 1000px;
-    /* left: 27px; */
-    /* top: -398px; */
   }
 
   .desktop-nav {
@@ -768,11 +765,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0px;
     position: absolute;
-    /* left: 400px;
-    top: 80px;
-    margin: auto; */
     width: 820px;
     left: 260px;
     top: 72px;
@@ -851,7 +844,7 @@ hr {
     height: 1244px;
     width: 1171px;
     top: 1059px;
-    padding: 80px 0px 80px 0px;
+    padding: 80px 1px 80px 1px;
     align-items: center;
   }
 
@@ -859,8 +852,6 @@ hr {
     height: 48px;
     width: 447px;
     margin-left: 447px;
-    width: 447px;
-    height: 48px;
     text-align: center;
   }
 
@@ -868,7 +859,6 @@ hr {
     width: 365px;
     margin-left: 1px;
     margin-right: 1px;
-
   }
 
   .project2:nth-child(2) {
@@ -907,19 +897,12 @@ hr {
 
   #desktop-projects {
     grid-template-columns: repeat(3, 1fr);
-    /* width:70%; */
     height: 988px;
     width: 1171px;
     top: 176px;
     gap: 24px;
     margin-left: 100px;
   }
-
-  /* .about {
-    width: 920px;
-    height: 808px;
-    padding-left: 20px;
-  } */
 
   .about-primary-text h3 {
     width: 447px;
@@ -976,7 +959,7 @@ hr {
     margin-left: 60px;
   }
 
-  .contact h3 {
+  .contact .h3 {
     width: 463px;
     height: 256px;
     align-items: self-start;
@@ -1063,4 +1046,5 @@ hr {
   #footer-image {
     display: none;
   }
+  
 }
