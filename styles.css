@@ -786,8 +786,17 @@ hr {
     top: 160px;
     border-radius: nullpx;
     padding-bottom: 24px;
+    animation: float 3s alternate-reverse;
+    animation-delay: 0.5s;
   }
 
+  @keyframes float {
+    100% {
+      top: 0;
+      opacity: 0;
+    }
+  }
+  
   #desktop-headline p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
