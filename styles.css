@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;");
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,7 +31,6 @@ body {
 }
 
 .logo {
-  background-repeat: no-repeat;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -43,12 +41,72 @@ body {
 .toolbar-container a {
   text-decoration: none;
   font-size: 30px;
-  display: block;
   color: #28352f;
 }
 
 .toolbar-container a:hover {
   color: #e71010;
+}
+
+.hidden-menu {
+  position: fixed;
+  height: 755px;
+  width: 375px;
+  left: -100%;
+  top: 70px;
+  border-radius: [object Object]px;
+} 
+
+.menu-list{
+  background-color: white; 
+  display: flex;
+  flex-direction: column;
+  padding: 108px 28px;
+  gap: 8px;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  left: 12px;
+  top: 92px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hidden-menu.active {
+  left: 1px;
+  top:1px;
+}
+
+.nav-link {
+  width: 351px;
+  height: 56px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #3A4A42;
+}
+
+.close-button {
+  width: 14px;
+  height: 14px;
+  left: 5px;
+  top: 5px;
+}
+
+.close {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 45px;
+  width: 327px;
+  height: 40px;
+  top: calc(10% - 35px / 2);
+  border-radius: 8px;
+  justify-content: flex-end;
 }
 
 .back-image {
@@ -720,6 +778,9 @@ hr {
     display: none;
   }
 
+  .hidden-menu {
+    display:none;
+  }
   .primary-headline {
     display: none;
   }
@@ -727,6 +788,7 @@ hr {
   .back-image {
     display: none;
   }
+
 
   .desktop-image {
     background-image: url(image/Header-llustration-desktop@2x.png);
