@@ -54,10 +54,9 @@ body {
   width: 375px;
   left: -100%;
   top: 70px;
-  border-radius: [object Object]px;
 } 
 
-.menu-list{
+.menu-list {
   background-color: white; 
   display: flex;
   flex-direction: column;
@@ -79,7 +78,7 @@ body {
 
 .hidden-menu.active {
   left: 1px;
-  top:1px;
+  top: 1px;
 }
 
 .nav-link {
@@ -87,7 +86,7 @@ body {
   height: 56px;
   border-radius: 8px;
   text-decoration: none;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 .close-button {
@@ -528,7 +527,7 @@ body {
   margin-top: 40px;
   margin-right: 50%;
   margin-left: 123px;
-  margin-bottom: 0 auto;
+  margin-bottom: 1px auto;
   left: calc(50% - 80px / 2 + 0.5px);
   top: calc(50% - 80px / 2);
 }
@@ -779,8 +778,9 @@ hr {
   }
 
   .hidden-menu {
-    display:none;
+    display: none;
   }
+
   .primary-headline {
     display: none;
   }
@@ -788,7 +788,6 @@ hr {
   .back-image {
     display: none;
   }
-
 
   .desktop-image {
     background-image: url(image/Header-llustration-desktop@2x.png);
@@ -846,7 +845,7 @@ hr {
     width: 725px;
     height: 114px;
     top: 160px;
-    border-radius: nullpx;
+    border-radius: 8px;
     padding-bottom: 24px;
   }
 
@@ -864,7 +863,7 @@ hr {
     height: 96px;
     width: 725px;
     top: 298px;
-    border-radius: nullpx;
+    border-radius: 8px;
     padding-bottom: 34px;
   }
 
