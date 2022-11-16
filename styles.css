@@ -56,6 +56,18 @@ body {
   top: -70px;
 }
 
+.line {
+  display: block;
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(35% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+  top: 650px;
+}
+
 .menu-list {
   background-color: white;
   display: flex;
