@@ -860,7 +860,7 @@ hr {
     border-radius: 8px;
     padding-bottom: 24px;
   }
-  
+
   #desktop-headline p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -874,6 +874,13 @@ hr {
     padding-bottom: 34px;
   }
 
+  @keyframes float {
+    100% {
+      top: 0;
+      opacity: 0;
+    }
+  }
+  
   .h1color {
     color: #3bc87a;
   }
