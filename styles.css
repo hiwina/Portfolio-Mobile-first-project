@@ -859,8 +859,8 @@ hr {
     top: 160px;
     border-radius: 8px;
     padding-bottom: 24px;
-    animation: float 5s;
-
+    animation: float 3s alternate-reverse;
+    animation-delay: 0.5s;
   }
 
   #desktop-headline p {
