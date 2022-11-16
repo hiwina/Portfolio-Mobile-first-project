@@ -861,7 +861,13 @@ hr {
     padding-bottom: 24px;
   }
 
-    @keyframes float {
+  #desktop-headline p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @keyframes float {
     100% {
       top: 0;
       opacity: 0;
