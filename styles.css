@@ -61,7 +61,7 @@ body {
   position: absolute;
   width: 134px;
   height: 5px;
-  left: calc(40% - 134px / 2 - 0.5px);
+  left: calc(50% - 134px / 2 - 0.5px);
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
@@ -226,7 +226,7 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, minmax(768px, 1fr 1fr 1fr));
+  grid-template-columns: repeat(2, 1fr 1fr 1fr);
   align-items: center;
   gap: 24px;
   width: 331px;
