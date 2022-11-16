@@ -1,13 +1,16 @@
 const humberger = document.querySelector('.icon');
 const navMenu = document.querySelector('.hidden-menu');
-const cancel = document.querySelectorAll('.nav-link');
+const navLink = document.querySelectorAll('.nav-link');
 
-humberger.addEventListener('click', () => {
+function openMenu() {
   humberger.classList.toggle('active');
   navMenu.classList.toggle('active');
-});
+}
 
-cancel.forEach(n => n.addEventListener('click', () => {
+function closeMenu() {
   humberger.classList.remove('active');
   navMenu.classList.remove('active');
-}));
+}
+
+humberger.addEventListener('click', openMenu);
+navLink.forEach((n) => n.addEventListener('click', closeMenu));
