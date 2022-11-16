@@ -865,6 +865,13 @@ hr {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #172b4d;
+    top: 298px;
+    border-radius: 8px;
+    padding-bottom: 34px;
   }
 
   @keyframes float {
