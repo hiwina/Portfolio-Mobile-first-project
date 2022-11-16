@@ -1,6 +1,6 @@
 const humberger = document.querySelector('.icon');
 const navMenu = document.querySelector('.hidden-menu');
-const cancel = document.querySelectorAll('.nav-link')
+const cancel = document.querySelectorAll('.nav-link');
 
 humberger.addEventListener('click', () => {
   humberger.classList.toggle('active');
