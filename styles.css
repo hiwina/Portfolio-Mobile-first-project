@@ -176,6 +176,7 @@ body {
   text-align: center;
   width: 327px;
   height: 164px;
+  padding-left: 12px;
 }
 
 .socialt {
@@ -226,7 +227,7 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-columns: repeat(1fr);
   align-items: center;
   gap: 24px;
   width: 331px;
@@ -870,7 +871,7 @@ hr {
     line-height: 32px;
     text-align: center;
     color: #172b4d;
-    height: 96px;
+    /* height: 96px; */
     width: 725px;
     top: 298px;
     border-radius: 8px;
