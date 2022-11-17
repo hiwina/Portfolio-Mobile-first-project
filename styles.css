@@ -51,6 +51,79 @@ body {
   color: #e71010;
 }
 
+.hidden-menu {
+  position: absolute;
+  height: 812px;
+  width: 375px;
+  left: -100%;
+  top: -70px;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+  top: 760px;
+}
+
+.shape {
+  background: #8cb9ed;
+  border-radius: 10px;
+}
+
+.menu-list {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 108px 28px;
+  gap: 8px;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hidden-menu.active {
+  left: 0;
+  top: 0;
+}
+
+.nav-link {
+  width: 345px;
+  height: 56px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+.close-button {
+  width: 14px;
+  height: 14px;
+  left: 5px;
+  top: 5px;
+}
+
+.close {
+  display: flex;
+  flex-direction: row;
+  padding-top: 45px;
+  height: 0;
+  top: calc(50% - 35px / 2);
+  border-radius: 8px;
+  justify-content: flex-end;
+}
+
 .back-image {
   background-image: url(image/header-illsutration-mobile@2x.jpeg);
   background-size: contain;
@@ -156,7 +229,7 @@ body {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(768px, 1fr 1fr 1fr));
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 24px;
   width: 331px;
@@ -470,7 +543,7 @@ body {
   margin-top: 40px;
   margin-right: 50%;
   margin-left: 123px;
-  margin-bottom: 0 auto;
+  margin-bottom: 0;
   left: calc(50% - 80px / 2 + 0.5px);
   top: calc(50% - 80px / 2);
 }
@@ -720,7 +793,11 @@ hr {
     display: none;
   }
 
-  .primary-headline {
+  /* .primary-headline {
+    display: none;
+  } */
+
+  .hidden-menu {
     display: none;
   }
 
@@ -784,7 +861,8 @@ hr {
     width: 725px;
     height: 114px;
     top: 160px;
-    border-radius: nullpx;
+
+    /* border-radius: nullpx; */
     padding-bottom: 24px;
     animation: float 3s alternate-reverse;
     animation-delay: 0.5s;
@@ -796,7 +874,7 @@ hr {
       opacity: 0;
     }
   }
-  
+
   #desktop-headline p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -811,7 +889,8 @@ hr {
     height: 96px;
     width: 725px;
     top: 298px;
-    border-radius: nullpx;
+
+    /* border-radius: nullpx; */
     padding-bottom: 34px;
   }
 
