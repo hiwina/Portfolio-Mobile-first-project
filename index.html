@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Portfolio</title>
- 
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 </head>
 
 <body> 
+
     <header class="navigation">
         <nav class="toolbar-container">
             <div class="logo"><a href="#welcome">Welcome</a></div>
-            <div>
-                <a class="icon" ><a href="#menu-bar">
+            <div class="icon">
+                <a href="#">
                 <i class="fa fa-bars"></i></a>
             </div>
         </nav>
     </header>
+    <header class="hidden-menu" >
+        <a href="#" class="close nav-link"><img src="image/Icon.png" class="close-button"></a>
+        <ul class="menu-list">
+          <li><a class="nav-link" href="#header"></a></li>
+          <li><a  href="#pwork" class="nav-link">Portfolio</a></li>
+          <li><a class="nav-link" href="#pabout">About</a></li>
+          <li><a class="nav-link" href="#form">Contact</a></li>
+        </ul>
+        <div class="menu-footer">
+            <span class="line"></span> 
+           </div>
+   </header>
+   
+
     <header class="desktop-image">
         <nav class="desktop-nav" desktop-image>
             <ul class="menu-bar">
@@ -257,5 +273,6 @@
                 <img src="image/Light.png" alt="footer image" id="footer-image">
             </div>
     </footer>
+     <script src="menu.js"></script>
 </body>
 </html>
