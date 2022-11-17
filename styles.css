@@ -52,6 +52,7 @@ body {
 }
 
 .hidden-menu {
+  display: block;
   position: absolute;
   height: 812px;
   width: 375px;
