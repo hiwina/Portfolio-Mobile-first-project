@@ -72,6 +72,14 @@ body {
   top: 760px;
 }
 
+.menu-footer {
+  background-color: #e5e5e5;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: 262px;
+  height: 57px;
+}
+
 .menu-list {
   background-color: white;
   display: flex;
@@ -88,6 +96,14 @@ body {
   line-height: 44px;
   text-decoration: none;
   transition: 0.3s;
+}
+
+.hidden-menu.active {
+  background-color: white;
+  left: 0;
+  top: 0;
+  height: 800px;
+  width: 100%;
 }
 
 .nav-link {
