@@ -72,11 +72,6 @@ body {
   top: 760px;
 }
 
-.shape {
-  background: #8cb9ed;
-  border-radius: 10px;
-}
-
 .menu-list {
   background-color: white;
   display: flex;
@@ -85,7 +80,7 @@ body {
   gap: 8px;
   list-style: none;
   width: 100%;
-  height: 100vh;
+  height: 184px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -93,11 +88,6 @@ body {
   line-height: 44px;
   text-decoration: none;
   transition: 0.3s;
-}
-
-.hidden-menu.active {
-  left: 0;
-  top: 0;
 }
 
 .nav-link {
