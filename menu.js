@@ -283,7 +283,11 @@ function displayDesktopCard() {
   projectTagsList.textContent.add = projectData.desktopTechnologies;
   projectTags.innerHTML.projectTagsList;
 
-  // ......
+  const projectDesc = document.createElement("p");
+  projectDesc.classList.add("descriptionParagraph");
+  projectDesc.textContent.add = projectData.description;
+  projectDiv.appendChild(projectDesc);
+
 }
 
 projectDetails.forEach((n) => n.addEventListener("click", displayDesktopCard));
