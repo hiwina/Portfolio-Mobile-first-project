@@ -609,7 +609,7 @@ body {
 }
 
 .contact h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -632,7 +632,7 @@ body {
 }
 
 ::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -715,7 +715,7 @@ body {
   background: #36b37f;
   border: none;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -730,7 +730,7 @@ hr {
 }
 
 .contact-social .footer-email a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -776,7 +776,7 @@ hr {
 
 .footer-email {
   height: 180px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -856,7 +856,7 @@ hr {
   }
 
   #desktop-headline h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -882,7 +882,7 @@ hr {
   }
 
   #desktop-headline p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1144,5 +1144,18 @@ hr {
 
   #footer-image {
     display: none;
+  }
+
+  .cardContainer {
+    background-color: #008552;
+    height: 100vh;
+  }
+
+  .deskProjectImg {
+    position: absolute;
+    width: 872px;
+    height: 616px;
+    left: 24px;
+    top: 78px;
   }
 }
