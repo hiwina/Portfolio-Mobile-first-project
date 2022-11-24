@@ -9,6 +9,33 @@ body {
   overflow-x: hidden;
 }
 
+.cardContainer {
+  display: none;
+}
+
+.deskProjectImg {
+  display: none;
+}
+
+.desktopTags {
+  display: none;
+}
+
+.desktopTagsList {
+  display: none;
+}
+.headBtn {
+  display: none;
+}
+
+.popPrimaryText {
+  display: none;
+}
+
+.descriptionParagraph {
+  display: none;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -794,6 +821,151 @@ hr {
   display: none;
 }
 
+.mcardContainer {
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 8px;
+  z-index: 10;
+  background-color: rgb(248, 242, 242);
+  width: 343px;
+  height: 836px;
+}
+
+.mcloseBtn {
+  cursor: pointer;
+  font-size: 30px;
+  /* color: fff; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 24px;
+  margin-top: 20px;
+  mix-blend-mode: none;
+  border-radius: none;
+}
+
+span .mcloseBtn {
+  color: ffffff;
+}
+
+.mProjectImg {
+  width: 311px;
+  height: 229px;
+  left: 24px;
+  padding: 0 24px 0 24px;
+}
+.mpopPrimaryText {
+  width: 259px;
+  height: 135px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 24px 12px 12px 24px;
+}
+.mTags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  list-style: none;
+  padding: 0 24px 0 24px;
+  width: 246px;
+  height: 32px;
+}
+
+.mTagsList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 77px;
+  height: 32px;
+  justify-content: center;
+  background: #ebecf0;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03e;
+}
+
+.mdescriptionParagraph {
+  width: 311px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 12px 24px 12px 24px;
+}
+
+.mseelive {
+  width: 115px;
+  height: 48px;
+  background: #36b37e;
+  border-radius: 8px;
+  bottom: 24px;
+  border: none;
+  gap: 12px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-image: url(image/Icon\ -\ Export.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-left: 24px;
+
+  padding: 12px 24px 0 12px;
+}
+
+.mseesource {
+  width: 141px;
+  height: 48px;
+  background: #36b37e;
+  right: 50%;
+  bottom: 24px;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-image: url(image/VectorSource.png);
+  background-repeat: no-repeat;
+  background-position: 115px;
+  margin-left: 12px;
+  padding: 12px 24px 0 12px;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: none;
@@ -1147,15 +1319,186 @@ hr {
   }
 
   .cardContainer {
-    background-color: #008552;
-    height: 100vh;
+    display: block;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 8px;
+    z-index: 10;
+    background-color: rgb(248, 242, 242);
+    width: 920px;
+    height: 1083px;
+  }
+
+  .closeBtn {
+    display: block;
+    cursor: pointer;
+    font-size: 2.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    /* top: calc(50% - 40px / 2 - 497.5px); */
+    top: 30px;
+    background: #ebecf0;
+    mix-blend-mode: multiply;
+    border-radius: 8px;
   }
 
   .deskProjectImg {
-    position: absolute;
+    display: block;
     width: 872px;
     height: 616px;
     left: 24px;
-    top: 78px;
+    margin-top: 78px;
+    padding: 24px 24px 0 24px;
+  }
+  .popPrimaryText {
+    display: block;
+    width: 589px;
+    height: 82px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+  .desktopTags {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    list-style: none;
+    padding: 0 24px 0 24px;
+  }
+
+  .desktopTagsList {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    width: 67px;
+    height: 32px;
+    background: #ebecf0;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03e;
+  }
+
+  .descriptionParagraph {
+    display: block;
+    width: 876px;
+    height: 151px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    padding: 24px 24px 20px 24px;
+  }
+
+  .headBtn {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap: 12px;
+    width: 869px;
+    height: 82px;
+    left: 26px;
+    top: 718px;
+  }
+
+  .seelive {
+    display: block;
+    width: 115px;
+    height: 48px;
+    background: #36b37e;
+    border-radius: 8px;
+    bottom: 24px;
+    border: none;
+    gap: 12px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background-image: url(image/Icon\ -\ Export.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .seesource {
+    display: block;
+    width: 141px;
+    height: 48px;
+    background: #36b37e;
+    right: 50%;
+    bottom: 24px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background-image: url(image/VectorSource.png);
+    background-repeat: no-repeat;
+    background-position: 115px;
+  }
+
+  .mcardContainer {
+    display: none;
+  }
+
+  .mProjectImg {
+    display: none;
+  }
+
+  .mTags {
+    display: none;
+  }
+
+  .mTagsList {
+    display: none;
+  }
+  .mheadBtn {
+    display: none;
+  }
+
+  .mpopPrimaryText {
+    display: none;
+  }
+
+  .mdescriptionParagraph {
+    display: none;
   }
 }

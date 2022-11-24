@@ -91,6 +91,8 @@ worksection.innerHTML += `<div class="project1" id="desktop-project1">
         </div> 
     </div>`;
 
+const closeButton = document.getElementsByClassName(".closeBtn");
+const mcloseButton = document.getElementsByClassName(".mcloseBtn");
 const projectDetails = document.querySelectorAll(
   ".see-project",
   "#desktop-see-projecr"
@@ -99,152 +101,125 @@ const projectDetails = document.querySelectorAll(
 const projectData = [
   {
     id: 0,
-    mobilePopImage: "./images/Snapshoot Portfolio.png",
-    desktopPopImage: "./images/Snapshoot Portfolio.png",
-    popCancelBtn: "X",
+    mobilePopImage: "./image/Snapshoot Portfolio.png",
+    desktopPopImage: "./image/Snapshoot Portfolio.png",
+    // <img src=\"http://placehold.it/350x350\" width=\"400px\" height=\"150px\">";
+    popCancelBtn: "&times",
     popHeaderDescription: "Keeping track of hundreds ofcomponents",
-    mobileTechnologies: {
-      data1: "Ruby on rails",
-      data2: "css",
-      data3: "JavaScript",
-      data4: "html",
-    },
-    desktopTechnologies: {
-      data1: "Codekit",
-      data2: "GitHub",
-      data3: "JavaScript",
-      data4: "Bootstrap",
-      data5: "Terminal",
-      data6: "Codepen",
-    },
+    mobileTechnologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    desktopTechnologies: [
+      "Codekit",
+      "GitHub",
+      "JavaScript",
+      "Bootstrap",
+      "Terminal",
+      "Codepen",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-    seeLive: "#",
-    seeSource: "#",
+    seeLive: "See Live",
+    seeSource: "See Source",
   },
 
   {
     id: 1,
-    mobilePopImage: "images/Snapshoot Portfolio.png",
-    desktopPopImage: "images/Snapshoot Portfolio.png",
-    popCancelBtn: "X",
+    mobilePopImage: "./image/Snapshoot Portfolio.png",
+    desktopPopImage: "./image/Snapshoot Portfolio.png",
+    popCancelBtn: "&times",
     popHeaderDescription: "Keeping track of hundreds ofcomponents",
-    mobileTechnologies: {
-      data1: "Ruby on rails",
-      data2: "css",
-      data3: "JavaScript",
-      data4: "html",
-    },
-    desktopTechnologies: {
-      data1: "Codekit",
-      data2: "GitHub",
-      data3: "JavaScript",
-      data4: "Bootstrap",
-      data5: "Terminal",
-      data6: "Codepen",
-    },
+    mobileTechnologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    desktopTechnologies: [
+      "Codekit",
+      "GitHub",
+      "JavaScript",
+      "Bootstrap",
+      "Terminal",
+      "Codepen",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-    seeLive: "#",
-    seeSource: "#",
+    seeLive: "See Live",
+    seeSource: "See Source",
   },
   {
     id: 2,
-    mobilePopImage: "images/Snapshoot Portfolio.png",
-    desktopPopImage: "images/Snapshoot Portfolio.png",
-    popCancelBtn: "X",
+    mobilePopImage: "./image/Snapshoot Portfolio.png",
+    desktopPopImage: "./image/Snapshoot Portfolio.png",
+    popCancelBtn: "&times",
     popHeaderDescription: "Keeping track of hundreds ofcomponents",
-    mobileTechnologies: {
-      data1: "Ruby on rails",
-      data2: "css",
-      data3: "JavaScript",
-      data4: "html",
-    },
-    desktopTechnologies: {
-      data1: "Codekit",
-      data2: "GitHub",
-      data3: "JavaScript",
-      data4: "Bootstrap",
-      data5: "Terminal",
-      data6: "Codepen",
-    },
+    mobileTechnologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    desktopTechnologies: [
+      "Codekit",
+      "GitHub",
+      "JavaScript",
+      "Bootstrap",
+      "Terminal",
+      "Codepen",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-    seeLive: "#",
-    seeSource: "#",
+    seeLive: "See Live",
+    seeSource: "See Source",
   },
   {
     id: 3,
-    mobilePopImage: "images/Snapshoot Portfolio.png",
-    desktopPopImage: "images/Snapshoot Portfolio.png",
-    popCancelBtn: "X",
+    mobilePopImage: "./image/Snapshoot Portfolio.png",
+    desktopPopImage: "./image/Snapshoot Portfolio.png",
+    popCancelBtn: "&times",
     popHeaderDescription: "Keeping track of hundreds ofcomponents",
-    mobileTechnologies: {
-      data1: "Ruby on rails",
-      data2: "css",
-      data3: "JavaScript",
-      data4: "html",
-    },
-    desktopTechnologies: {
-      data1: "Codekit",
-      data2: "GitHub",
-      data3: "JavaScript",
-      data4: "Bootstrap",
-      data5: "Terminal",
-      data6: "Codepen",
-    },
+    mobileTechnologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    desktopTechnologies: [
+      "Codekit",
+      "GitHub",
+      "JavaScript",
+      "Bootstrap",
+      "Terminal",
+      "Codepen",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-    seeLive: "#",
-    seeSource: "#",
+    seeLive: "See Live",
+    seeSource: "See Source",
   },
   {
     id: 4,
-    mobilePopImage: "images/Snapshoot Portfolio.png",
-    desktopPopImage: "images/Snapshoot Portfolio.png",
+    mobilePopImage: "./image/Snapshoot Portfolio.png",
+    desktopPopImage: "./image/Snapshoot Portfolio.png",
+    popCancelBtn: "&times",
     popHeaderDescription: "Keeping track of hundreds ofcomponents",
-    mobileTechnologies: {
-      data1: "Ruby on rails",
-      data2: "css",
-      data3: "JavaScript",
-      data4: "html",
-    },
-    desktopTechnologies: {
-      data1: "Codekit",
-      data2: "GitHub",
-      data3: "JavaScript",
-      data4: "Bootstrap",
-      data5: "Terminal",
-      data6: "Codepen",
-    },
+    mobileTechnologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    desktopTechnologies: [
+      "Codekit",
+      "GitHub",
+      "JavaScript",
+      "Bootstrap",
+      "Terminal",
+      "Codepen",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-    seeLive: "#",
-    seeSource: "#",
+    seeLive: "See Live",
+    seeSource: "See Source",
   },
   {
     id: 5,
-    mobilePopImage: "images/Snapshoot Portfolio.png",
-    desktopPopImage: "images/Snapshoot Portfolio.png",
+    mobilePopImage: "./image/Snapshoot Portfolio.png",
+    desktopPopImage: "./image/Snapshoot Portfolio.png",
+    popCancelBtn: "&times",
     popHeaderDescription: "Keeping track of hundreds ofcomponents",
-    mobileTechnologies: {
-      data1: "Ruby on rails",
-      data2: "css",
-      data3: "JavaScript",
-      data4: "html",
-    },
-    desktopTechnologies: {
-      data1: "Codekit",
-      data2: "GitHub",
-      data3: "JavaScript",
-      data4: "Bootstrap",
-      data5: "Terminal",
-      data6: "Codepen",
-    },
+    mobileTechnologies: ["Ruby on rails", "css", "JavaScript", "html"],
+    desktopTechnologies: [
+      "Codekit",
+      "GitHub",
+      "JavaScript",
+      "Bootstrap",
+      "Terminal",
+      "Codepen",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
-    seeLive: "#",
-    seeSource: "#",
+    seeLive: "See Live",
+    seeSource: "See Source",
   },
 ];
 
@@ -252,91 +227,159 @@ const workCard = document.querySelector(
   ".recent-works-container",
   "#desktop-recent-works"
 );
-
+var currentOpented;
 function displayDesktopCard() {
-  const projectDiv = document.createElement("div");
-  projectDiv.classList.add("cardContainer");
-  workCard.appendChild(projectDiv);
+  for (let i = 0; i < projectData.length; i++) {
+    const projectDiv = document.createElement("div");
+    projectDiv.classList.add("cardContainer");
+    workCard.appendChild(projectDiv);
 
-  const projectSpan = document.createElement("span");
-  projectSpan.classList.add("clseBtn");
-  projectSpan.textContent = "&times";
-  projectDiv.appendChild(projectSpan);
+    const projectSpan = document.createElement("span");
+    projectSpan.classList.add("closeBtn");
+    projectSpan.innerHTML = projectData[i].popCancelBtn;
+    projectDiv.appendChild(projectSpan);
 
-  const projectImg = document.createElement("img");
-  projectImg.classList.add("deskProjectImg");
-  projectImg.textContent = projectData.mobilePopImage;
-  projectDiv.appendChild(projectImg);
+    const projectImg = document.createElement("img");
+    projectImg.classList.add("deskProjectImg");
+    projectImg.src = projectData[i].desktopPopImage;
+    projectDiv.appendChild(projectImg);
 
-  const projectHeader = document.createElement("h3");
-  projectHeader.classList.add("popPrimaryText");
-  projectHeader.textContent.add = projectData.popHeaderDescription;
-  projectDiv.appendChild(projectHeader);
+    const headBtnDiv = document.createElement("div");
+    headBtnDiv.classList.add("headBtn");
+    projectDiv.appendChild(headBtnDiv);
 
-  const projectTags = document.createElement("ul");
-  projectTags.classList.add("desktopTags");
-  projectTags.textContent.add = projectData.desktopTechnologies;
-  projectDiv.appendChild(projectTags);
+    const projectHeader = document.createElement("h3");
+    projectHeader.classList.add("popPrimaryText");
+    projectHeader.innerHTML = projectData[i].popHeaderDescription;
+    headBtnDiv.appendChild(projectHeader);
 
-  const projectTagsList = document.createElement("li");
-  projectTagsList.classList.add("desktopTagsList");
-  projectTagsList.textContent.add = projectData.desktopTechnologies;
-  projectTags.innerHTML.projectTagsList;
+    const buttonSeeLive = document.createElement("button");
+    buttonSeeLive.classList.add("seelive");
+    buttonSeeLive.innerHTML = projectData[i].seeLive;
+    headBtnDiv.appendChild(buttonSeeLive);
 
-  const projectDesc = document.createElement("p");
-  projectDesc.classList.add("descriptionParagraph");
-  projectDesc.textContent.add = projectData.description;
-  projectDiv.appendChild(projectDesc);
+    const buttonSeeSource = document.createElement("button");
+    buttonSeeSource.classList.add("seesource");
+    buttonSeeSource.innerHTML = projectData[i].seeSource;
+    headBtnDiv.appendChild(buttonSeeSource);
 
+    const projectTags = document.createElement("ul");
+    projectTags.classList.add("desktopTags");
+    projectDiv.appendChild(projectTags);
+
+    const projectTagsList5 = document.createElement("li");
+    projectTagsList5.classList.add("desktopTagsList");
+    projectTagsList5.innerHTML = projectData[i].desktopTechnologies[i - 5];
+    projectTags.appendChild(projectTagsList5);
+
+    const projectTagsList4 = document.createElement("li");
+    projectTagsList4.classList.add("desktopTagsList");
+    projectTagsList4.innerHTML = projectData[i].desktopTechnologies[i - 4];
+    projectTags.appendChild(projectTagsList4);
+
+    const projectTagsList = document.createElement("li");
+    projectTagsList.classList.add("desktopTagsList");
+    projectTagsList.innerHTML = projectData[i].desktopTechnologies[i - 3];
+    projectTags.appendChild(projectTagsList);
+
+    const projectTagsList1 = document.createElement("li");
+    projectTagsList1.classList.add("desktopTagsList");
+    projectTagsList1.innerHTML = projectData[i].desktopTechnologies[i - 2];
+    projectTags.appendChild(projectTagsList1);
+
+    const projectTagsList2 = document.createElement("li");
+    projectTagsList2.classList.add("desktopTagsList");
+    projectTagsList2.innerHTML = projectData[i].desktopTechnologies[i - 1];
+    projectTags.appendChild(projectTagsList2);
+
+    const projectTagsList3 = document.createElement("li");
+    projectTagsList3.classList.add("desktopTagsList");
+    projectTagsList3.innerHTML = projectData[i].desktopTechnologies[i];
+    projectTags.appendChild(projectTagsList3);
+
+    const projectDesc = document.createElement("p");
+    projectDesc.classList.add("descriptionParagraph");
+    projectDesc.innerHTML = projectData[i].description;
+    projectDiv.appendChild(projectDesc);
+    console.log(projectData[i].desktopTechnologies[i]);
+  }
+}
+
+const mworkCard = document.querySelector(
+  ".recent-works-container",
+  "#desktop-recent-works"
+);
+function displayMobileCard() {
+  for (let i = 0; i < projectData.length; i++) {
+    const projectDiv = document.createElement("div");
+    projectDiv.classList.add("mcardContainer");
+    mworkCard.appendChild(projectDiv);
+
+    const projectSpan = document.createElement("span");
+    projectSpan.classList.add("mcloseBtn");
+    projectSpan.innerHTML = projectData[i].popCancelBtn;
+    projectDiv.appendChild(projectSpan);
+
+    const projectImg = document.createElement("img");
+    projectImg.classList.add("mProjectImg");
+    projectImg.src = projectData[i].desktopPopImage;
+    projectDiv.appendChild(projectImg);
+
+    const projectHeader = document.createElement("h3");
+    projectHeader.classList.add("mpopPrimaryText");
+    projectHeader.innerHTML = projectData[i].popHeaderDescription;
+    projectDiv.appendChild(projectHeader);
+
+    const projectTags = document.createElement("ul");
+    projectTags.classList.add("mTags");
+    projectDiv.appendChild(projectTags);
+
+    const projectTagsList1 = document.createElement("li");
+    projectTagsList1.classList.add("mTagsList");
+    projectTagsList1.innerHTML = projectData[i].mobileTechnologies[0];
+    projectTags.appendChild(projectTagsList1);
+
+    const projectTagsList2 = document.createElement("li");
+    projectTagsList2.classList.add("mTagsList");
+    projectTagsList2.innerHTML = projectData[i].mobileTechnologies[1];
+    projectTags.appendChild(projectTagsList2);
+
+    const projectTagsList3 = document.createElement("li");
+    projectTagsList3.classList.add("mTagsList");
+    projectTagsList3.innerHTML = projectData[i].mobileTechnologies[2];
+    projectTags.appendChild(projectTagsList3);
+
+    const projectDesc = document.createElement("p");
+    projectDesc.classList.add("mdescriptionParagraph");
+    projectDesc.innerHTML = projectData[i].description;
+    projectDiv.appendChild(projectDesc);
+
+    const buttonSeeLive = document.createElement("button");
+    buttonSeeLive.classList.add("mseelive");
+    buttonSeeLive.innerHTML = projectData[i].seeLive;
+    projectDiv.appendChild(buttonSeeLive);
+
+    const buttonSeeSource = document.createElement("button");
+    buttonSeeSource.classList.add("mseesource");
+    buttonSeeSource.innerHTML = projectData[i].seeSource;
+    projectDiv.appendChild(buttonSeeSource);
+  }
+}
+
+function removePopup() {
+  // projectDiv.classList.remove("cardContainer");
+  for (var i = 0; i < projectData.length; i++) {
+    document.getElementsByClassName("cardContainer").style.display = "none";
+  }
+}
+
+function mremovePopup() {
+  for (var i = 0; i < projectData.length; i++) {
+    projectDiv.classList.remove("mcardContainer");
+  }
 }
 
 projectDetails.forEach((n) => n.addEventListener("click", displayDesktopCard));
-
-// const projectDetaildDesktop = (content) => `
-//    <span class="popCancelBtn"> &times;</span>
-//    <img class="popImage" src=${projectData.desktopPopImage[content]} alt="Desktop Image">
-//    <h2 class="projectName">${projectData[content].popHeaderDescription}</h2>
-//    <ul class="tags">
-//      <li><a href="">${projectData[content].desktopTechnologies.data1}</a></li>
-//    <li><a href="">${projectData[content].desktopTechnologies.data2}</a></li>
-//      <li><a href="">${projectData[content].desktopTechnologies.data3}</a></li>
-//      <li><a href="">${projectData[content].desktopTechnologies.data4}</a></li>
-//      <li><a href="">${projectData[content].desktopTechnologies.data5}</a></li>
-//      <li><a href="">${projectData[content].desktopTechnologies.data6}</a></li>
-//    </ul>
-//    <p class="detailDescription">${projectData[content].description}</p>
-//    <div class="btn">
-//      <a href="${projectData[content].seeLive}">See Live <i class="fa fa-external-link"></i></a>
-//      <a href="${projectData[content].seeSource}">See Source <i class="fa fa-external-link"></i></a>
-//    </div>
-//    `;
-
-// // function displayPopup() {
-// //   const creatDiv = document.createElement('div');
-// //   creatDiv.className = '.popupDetail';
-// //   creatDiv.innerHTML = projectDetaildDesktop;
-// //   workCard.appendChild(creatDiv);
-// // }
-
-// // function closePopup() {
-// //   workCard.removeChild(displayPopup.applycreatDiv);
-// // }
-
-// // projectDetails.forEach((n) => n.addEventListener('click', displayPopup));
-
-// // const closeBtn = document.querySelectorAll('.popCancelBtn');
-// // closeBtn.addEventListener('click', closePopup);
-
-// for (let i = 0; i < projectDetails.length; i = +1) {
-//   projectDetails[i].addEventListener('click', () => {
-//     const creatDiv = document.createElement('div');
-//     creatDiv.className = 'work-details-card';
-//     creatDiv.innerHTML = projectDetaildDesktop(i);
-//     workCard.appendChild(creatDiv);
-//     // document.body.appendChild(create_div);
-//     // const closedetails = document.querySelector('.close-details');
-//     // closedetails.addEventListener('click', async => {
-//     //   workCard.removeChild(create_div);
-//     // });
-//   });
-// }
+projectDetails.forEach((n) => n.addEventListener("click", displayMobileCard));
+closeButton.addEventListener("click", removePopup);
+mcloseButton.addEventListener("click", mremovePopup);
