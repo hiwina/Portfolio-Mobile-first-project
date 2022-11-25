@@ -366,6 +366,8 @@ console.log(projectDiv);
 
 function displayMobileCard() {
   mworkCard.appendChild(projectDiv);
+  const mcloseButton = document.getElementsByClassName("mcloseBtn");
+  mcloseButton[0].addEventListener("click", closeMobilepop);
 }
 
 function closeMobilepop() {
@@ -374,10 +376,9 @@ function closeMobilepop() {
   } else {
     mworkCard.removeChild(projectDiv);
   }
-  const mcloseButton = document.getElementsByClassName(".mcloseBtn");
   console.log;
 }
 
 projectDetails.forEach((n) => n.addEventListener("click", displayDesktopCard));
 projectDetails.forEach((n) => n.addEventListener("click", displayMobileCard));
-mcloseButton.addEventListener("click", closeMobilepop);
+// mcloseButton.addEventListener("click", closeMobilepop);
