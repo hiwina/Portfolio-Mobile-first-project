@@ -92,7 +92,7 @@ worksection.innerHTML += `<div class="project1" id="desktop-project1">
     </div>`;
 
 const closeButton = document.getElementsByClassName(".closeBtn");
-const mcloseButton = document.getElementsByClassName(".mcloseBtn");
+// const mcloseButton = document.getElementsByClassName(".mcloseBtn");
 const projectDetails = document.querySelectorAll(
   ".see-project",
   "#desktop-see-projecr"
@@ -301,7 +301,7 @@ function displayDesktopCard() {
     projectDesc.classList.add("descriptionParagraph");
     projectDesc.innerHTML = projectData[i].description;
     projectDiv.appendChild(projectDesc);
-    console.log(projectData[i].desktopTechnologies[i]);
+    // console.log(projectData[i].desktopTechnologies[i]);
   }
 }
 
@@ -309,77 +309,75 @@ const mworkCard = document.querySelector(
   ".recent-works-container",
   "#desktop-recent-works"
 );
+// function displayMobileCard() {
+// for (let i = 0; i < projectData.length; i++) {
+const projectDiv = document.createElement("div");
+projectDiv.classList.add("mcardContainer");
+// mworkCard.appendChild(projectDiv);
+const projectSpan = document.createElement("span");
+projectSpan.classList.add("mcloseBtn");
+projectSpan.innerHTML = projectData[0].popCancelBtn;
+projectDiv.appendChild(projectSpan);
+
+const projectImg = document.createElement("img");
+projectImg.classList.add("mProjectImg");
+projectImg.src = projectData[0].desktopPopImage;
+projectDiv.appendChild(projectImg);
+
+const projectHeader = document.createElement("h3");
+projectHeader.classList.add("mpopPrimaryText");
+projectHeader.innerHTML = projectData[0].popHeaderDescription;
+projectDiv.appendChild(projectHeader);
+
+const projectTags = document.createElement("ul");
+projectTags.classList.add("mTags");
+projectDiv.appendChild(projectTags);
+
+const projectTagsList1 = document.createElement("li");
+projectTagsList1.classList.add("mTagsList");
+projectTagsList1.innerHTML = projectData[0].mobileTechnologies[0];
+projectTags.appendChild(projectTagsList1);
+
+const projectTagsList2 = document.createElement("li");
+projectTagsList2.classList.add("mTagsList");
+projectTagsList2.innerHTML = projectData[0].mobileTechnologies[1];
+projectTags.appendChild(projectTagsList2);
+
+const projectTagsList3 = document.createElement("li");
+projectTagsList3.classList.add("mTagsList");
+projectTagsList3.innerHTML = projectData[0].mobileTechnologies[2];
+projectTags.appendChild(projectTagsList3);
+
+const projectDesc = document.createElement("p");
+projectDesc.classList.add("mdescriptionParagraph");
+projectDesc.innerHTML = projectData[0].description;
+projectDiv.appendChild(projectDesc);
+
+const buttonSeeLive = document.createElement("button");
+buttonSeeLive.classList.add("mseelive");
+buttonSeeLive.innerHTML = projectData[0].seeLive;
+projectDiv.appendChild(buttonSeeLive);
+
+const buttonSeeSource = document.createElement("button");
+buttonSeeSource.classList.add("mseesource");
+buttonSeeSource.innerHTML = projectData[0].seeSource;
+projectDiv.appendChild(buttonSeeSource);
+console.log(projectDiv);
+
 function displayMobileCard() {
-  for (let i = 0; i < projectData.length; i++) {
-    const projectDiv = document.createElement("div");
-    projectDiv.classList.add("mcardContainer");
-    mworkCard.appendChild(projectDiv);
-
-    const projectSpan = document.createElement("span");
-    projectSpan.classList.add("mcloseBtn");
-    projectSpan.innerHTML = projectData[i].popCancelBtn;
-    projectDiv.appendChild(projectSpan);
-
-    const projectImg = document.createElement("img");
-    projectImg.classList.add("mProjectImg");
-    projectImg.src = projectData[i].desktopPopImage;
-    projectDiv.appendChild(projectImg);
-
-    const projectHeader = document.createElement("h3");
-    projectHeader.classList.add("mpopPrimaryText");
-    projectHeader.innerHTML = projectData[i].popHeaderDescription;
-    projectDiv.appendChild(projectHeader);
-
-    const projectTags = document.createElement("ul");
-    projectTags.classList.add("mTags");
-    projectDiv.appendChild(projectTags);
-
-    const projectTagsList1 = document.createElement("li");
-    projectTagsList1.classList.add("mTagsList");
-    projectTagsList1.innerHTML = projectData[i].mobileTechnologies[0];
-    projectTags.appendChild(projectTagsList1);
-
-    const projectTagsList2 = document.createElement("li");
-    projectTagsList2.classList.add("mTagsList");
-    projectTagsList2.innerHTML = projectData[i].mobileTechnologies[1];
-    projectTags.appendChild(projectTagsList2);
-
-    const projectTagsList3 = document.createElement("li");
-    projectTagsList3.classList.add("mTagsList");
-    projectTagsList3.innerHTML = projectData[i].mobileTechnologies[2];
-    projectTags.appendChild(projectTagsList3);
-
-    const projectDesc = document.createElement("p");
-    projectDesc.classList.add("mdescriptionParagraph");
-    projectDesc.innerHTML = projectData[i].description;
-    projectDiv.appendChild(projectDesc);
-
-    const buttonSeeLive = document.createElement("button");
-    buttonSeeLive.classList.add("mseelive");
-    buttonSeeLive.innerHTML = projectData[i].seeLive;
-    projectDiv.appendChild(buttonSeeLive);
-
-    const buttonSeeSource = document.createElement("button");
-    buttonSeeSource.classList.add("mseesource");
-    buttonSeeSource.innerHTML = projectData[i].seeSource;
-    projectDiv.appendChild(buttonSeeSource);
-  }
+  mworkCard.appendChild(projectDiv);
 }
 
-function removePopup() {
-  // projectDiv.classList.remove("cardContainer");
-  for (var i = 0; i < projectData.length; i++) {
-    document.getElementsByClassName("cardContainer").style.display = "none";
+function closeMobilepop() {
+  if (typeof displayMobileCard === undefined) {
+    return;
+  } else {
+    mworkCard.removeChild(projectDiv);
   }
-}
-
-function mremovePopup() {
-  for (var i = 0; i < projectData.length; i++) {
-    projectDiv.classList.remove("mcardContainer");
-  }
+  const mcloseButton = document.getElementsByClassName(".mcloseBtn");
+  console.log;
 }
 
 projectDetails.forEach((n) => n.addEventListener("click", displayDesktopCard));
 projectDetails.forEach((n) => n.addEventListener("click", displayMobileCard));
-closeButton.addEventListener("click", removePopup);
-mcloseButton.addEventListener("click", mremovePopup);
+mcloseButton.addEventListener("click", closeMobilepop);
