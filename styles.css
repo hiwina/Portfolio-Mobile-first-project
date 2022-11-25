@@ -24,6 +24,7 @@ body {
 .desktopTagsList {
   display: none;
 }
+
 .headBtn {
   display: none;
 }
@@ -822,14 +823,13 @@ hr {
 }
 
 .mcardContainer {
-  height: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 8px;
   z-index: 10;
   background-color: rgb(248, 242, 242);
@@ -840,6 +840,7 @@ hr {
 .mcloseBtn {
   cursor: pointer;
   font-size: 30px;
+
   /* color: fff; */
   display: flex;
   flex-direction: row;
@@ -851,12 +852,11 @@ hr {
   height: 24px;
   right: 24px;
   margin-top: 20px;
-  mix-blend-mode: none;
-  border-radius: none;
+  border-radius: 0;
 }
 
 span .mcloseBtn {
-  color: ffffff;
+  color: white;
 }
 
 .mProjectImg {
@@ -865,6 +865,7 @@ span .mcloseBtn {
   left: 24px;
   padding: 0 24px 0 24px;
 }
+
 .mpopPrimaryText {
   width: 259px;
   height: 135px;
@@ -876,11 +877,11 @@ span .mcloseBtn {
   color: #172b4d;
   padding: 24px 12px 12px 24px;
 }
+
 .mTags {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 12px;
   list-style: none;
   padding: 0 24px 0 24px;
@@ -897,12 +898,12 @@ span .mcloseBtn {
   justify-content: center;
   background: #ebecf0;
   border-radius: 8px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.03e;
+  letter-spacing: 0.03em;
 }
 
 .mdescriptionParagraph {
@@ -937,7 +938,6 @@ span .mcloseBtn {
   background-repeat: no-repeat;
   background-position: right;
   margin-left: 24px;
-
   padding: 12px 24px 0 12px;
 }
 
@@ -965,8 +965,6 @@ span .mcloseBtn {
   margin-left: 12px;
   padding: 12px 24px 0 12px;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .navigation {
@@ -1326,9 +1324,9 @@ span .mcloseBtn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 8px;
     z-index: 10;
     background-color: rgb(248, 242, 242);
@@ -1340,7 +1338,6 @@ span .mcloseBtn {
     display: block;
     cursor: pointer;
     font-size: 2.75rem;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -1349,7 +1346,6 @@ span .mcloseBtn {
     width: 40px;
     height: 40px;
     right: 24px;
-    /* top: calc(50% - 40px / 2 - 497.5px); */
     top: 30px;
     background: #ebecf0;
     mix-blend-mode: multiply;
@@ -1364,6 +1360,7 @@ span .mcloseBtn {
     margin-top: 78px;
     padding: 24px 24px 0 24px;
   }
+
   .popPrimaryText {
     display: block;
     width: 589px;
@@ -1375,12 +1372,12 @@ span .mcloseBtn {
     line-height: 44px;
     color: #172b4d;
   }
+
   .desktopTags {
     display: block;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 12px;
     list-style: none;
     padding: 0 24px 0 24px;
@@ -1396,12 +1393,12 @@ span .mcloseBtn {
     height: 32px;
     background: #ebecf0;
     border-radius: 8px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.03e;
+    letter-spacing: 0.03em;
   }
 
   .descriptionParagraph {
@@ -1491,6 +1488,7 @@ span .mcloseBtn {
   .mTagsList {
     display: none;
   }
+
   .mheadBtn {
     display: none;
   }
@@ -1503,6 +1501,7 @@ span .mcloseBtn {
     display: none;
   }
 }
+
 #overlay {
   position: fixed;
   opacity: 0;
