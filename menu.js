@@ -381,3 +381,35 @@ function closeMobilepop() {
 projectDetails.forEach((n) => n.addEventListener("click", displayDesktopCard));
 projectDetails.forEach((n) => n.addEventListener("click", displayMobileCard));
 mcloseButton.addEventListener("click", closeMobilepop);
+
+// form Validation
+
+function validator(event) {
+  if (event.data !== null) {
+    if (event.data.toLowerCase() !== event.data) {
+      formInput.textContent = "Please use lowercase!";
+      formInput.style.display = "block";
+    } else if (email.validity.typeMismatch) {
+      formInput.textContent = "please enter a valid Email!";
+      formInput.style.display = "block";
+    } else {
+      formInput.textContent = "";
+    }
+  } else if (event.data === null) {
+    formInput.style.display = "none";
+  }
+}
+
+email.addEventListener("input", (event) => {
+  formInput.style.display = "none";
+  validator(event);
+});
+
+contactForm.addEventListener("submit", (event) => {
+  emailValue = email.value;
+  if (emailValue.toLowerCase() !== emailValue) {
+    formInput.textContent = "Please use LOWERCASE letters on email!";
+    formInput.style.display = "block";
+    event.preventDefault();
+  }
+});
