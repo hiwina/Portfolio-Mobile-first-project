@@ -383,6 +383,10 @@ projectDetails.forEach((n) => n.addEventListener("click", displayMobileCard));
 mcloseButton.addEventListener("click", closeMobilepop);
 
 // form Validation
+const fullName = document.getElementById("footer-name");
+const email = document.getElementById("email");
+const contactForm = document.querySelector("#form");
+const formInput = document.querySelector(".form-btn");
 
 function validator(event) {
   if (event.data !== null) {
