@@ -394,24 +394,12 @@ projectDetails.forEach((n) => n.addEventListener('click', displayMobileCard));
 projectDetails.forEach((n) => n.addEventListener('click', displayDesktopCard));
 
 // form Validation
-const fullName = document.getElementById('#name');
-const email = document.getElementById('#email');
-const userMessage = document.getElementById('#message');
+const fullName = document.getElementById('name');
+const email = document.getElementById('email');
+const userMessage = document.getElementById('message');
 const contactForm = document.querySelector('#form');
 const formInput = document.querySelector('.form-btn');
 const error = document.querySelector('.error');
-
-// contactForm.addEventListener('submit', (e) => {
-//   const emailValue = email.value;
-//   let flag = 0;
-//   for (let i = 0; i < emailValue.length; i += 1) {
-//     if (emailValue[i] !== emailValue[i].toLowerCase()) {
-//       e.preventDefault();
-//       error.innerText = 'Please enter email in lowercase';
-//       flag = 1;
-//     }
-//   }
-// });
 
 formInput.addEventListener('input', () => {
   const Data = {
