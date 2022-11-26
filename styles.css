@@ -1341,22 +1341,6 @@ span .mcloseBtn {
     bottom: 1%;
     overflow-y: scroll;
     margin-bottom: 100px;
-
-    /* overflow-y: scroll; */
-
-    /* z-index: 10; */
-
-
-    /* transform: translate(-70%, -70%);   */
-
-    /* border: 1px solid #ebecf0;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 8px;
-    z-index: 10;
-    background-color: rgb(248, 242, 242); */
-
-
-    /* overflow: auto; */
   }
 
   .closeBtn {
