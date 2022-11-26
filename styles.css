@@ -916,6 +916,10 @@ span .mcloseBtn {
   padding: 12px 24px 12px 24px;
 }
 
+.error {
+  color: red;
+}
+
 .mseelive {
   width: 115px;
   height: 48px;
