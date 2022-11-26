@@ -396,7 +396,7 @@ projectDetails.forEach((n) => n.addEventListener('click', displayDesktopCard));
 // form Validation
 const fullName = document.getElementById('footer-name');
 const email = document.getElementById('email');
-const userMessage = document.getElementById('message')
+const userMessage = document.getElementById('message');
 const contactForm = document.querySelector('#form');
 const formInput = document.querySelector('.form-btn');
 const error = document.querySelector('.error');
@@ -411,4 +411,4 @@ contactForm.addEventListener('submit', (e) => {
       flag = 1;
     }
   }
-  });
+});
