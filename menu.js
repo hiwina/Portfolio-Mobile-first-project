@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const humberger = document.querySelector('.icon');
 const navMenu = document.querySelector('.hidden-menu');
 const navLink = document.querySelectorAll('.nav-link');
