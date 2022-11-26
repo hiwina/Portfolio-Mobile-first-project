@@ -100,7 +100,7 @@ const projectDetails = document.querySelectorAll(
 const projectData = [
   {
     id: 0,
-    mobilePopImage: './image/Snapshoot Portfolio.png',
+    mobilePopImage: './image/Snapshoot Portfolio (2).png',
     desktopPopImage: './image/Snapshoot Portfolio.png',
     popCancelBtn: '&times',
     popHeaderDescription: 'Keeping track of hundreds ofcomponents',
@@ -126,7 +126,7 @@ const projectData = [
 
   {
     id: 1,
-    mobilePopImage: './image/Snapshoot Portfolio.png',
+    mobilePopImage: './image/Snapshoot Portfolio (2).png',
     desktopPopImage: './image/Snapshoot Portfolio.png',
     popCancelBtn: '&times',
     popHeaderDescription: 'Keeping track of hundreds ofcomponents',
@@ -151,7 +151,7 @@ const projectData = [
 
   {
     id: 2,
-    mobilePopImage: './image/Snapshoot Portfolio.png',
+    mobilePopImage: './image/Snapshoot Portfolio (2).png',
     desktopPopImage: './image/Snapshoot Portfolio.png',
     popCancelBtn: '&times',
     popHeaderDescription: 'Keeping track of hundreds ofcomponents',
@@ -176,7 +176,7 @@ const projectData = [
 
   {
     id: 3,
-    mobilePopImage: './image/Snapshoot Portfolio.png',
+    mobilePopImage: './image/Snapshoot Portfolio (2).png',
     desktopPopImage: './image/Snapshoot Portfolio.png',
     popCancelBtn: '&times',
     popHeaderDescription: 'Keeping track of hundreds ofcomponents',
@@ -202,7 +202,7 @@ const projectData = [
 
   {
     id: 4,
-    mobilePopImage: './image/Snapshoot Portfolio.png',
+    mobilePopImage: './image/Snapshoot Portfolio (2).png',
     desktopPopImage: './image/Snapshoot Portfolio.png',
     popCancelBtn: '&times',
     popHeaderDescription: 'Keeping track of hundreds ofcomponents',
@@ -228,7 +228,7 @@ const projectData = [
 
   {
     id: 5,
-    mobilePopImage: './image/Snapshoot Portfolio.png',
+    mobilePopImage: './image/Snapshoot Portfolio (2).png',
     desktopPopImage: './image/Snapshoot Portfolio.png',
     popCancelBtn: '&times',
     popHeaderDescription: 'Keeping track of hundreds ofcomponents',
@@ -259,10 +259,8 @@ const mworkCard = document.querySelector(
 );
 
 const workCard = document.querySelector(
-  '.recent-works-container',
-  '#desktop-recent-works',
+  'body',
 );
-
 const projectDeskDiv = document.createElement('div');
 projectDeskDiv.classList.add('cardContainer');
 const projectDeskSpan = document.createElement('span');
@@ -293,46 +291,33 @@ projectDeskTags.classList.add('desktopTags');
 projectDeskDiv.appendChild(projectDeskTags);
 const projectDeskTagsList5 = document.createElement('li');
 projectDeskTagsList5.classList.add('desktopTagsList');
-projectDeskTagsList5.innerHTML = projectData[0].desktopTechnologies.data1;
+projectDeskTagsList5.innerHTML = projectData[0].desktopTechnologies[0].data1;
 projectDeskTags.appendChild(projectDeskTagsList5);
 const projectDeskTagsList4 = document.createElement('li');
 projectDeskTagsList4.classList.add('desktopTagsList');
-projectDeskTagsList4.innerHTML = projectData[0].desktopTechnologies.data2;
+projectDeskTagsList4.innerHTML = projectData[0].desktopTechnologies[0].data2;
 projectDeskTags.appendChild(projectDeskTagsList4);
 const projectDeskTagsList = document.createElement('li');
 projectDeskTagsList.classList.add('desktopTagsList');
-projectDeskTagsList.innerHTML = projectData[0].desktopTechnologies.data3;
+projectDeskTagsList.innerHTML = projectData[0].desktopTechnologies[0].data3;
 projectDeskTags.appendChild(projectDeskTagsList);
 const projectDeskTagsList1 = document.createElement('li');
 projectDeskTagsList1.classList.add('desktopTagsList');
-projectDeskTagsList1.innerHTML = projectData[0].desktopTechnologies.data4;
+projectDeskTagsList1.innerHTML = projectData[0].desktopTechnologies[0].data4;
 projectDeskTags.appendChild(projectDeskTagsList1);
 const projectDeskTagsList2 = document.createElement('li');
 projectDeskTagsList2.classList.add('desktopTagsList');
-projectDeskTagsList2.innerHTML = projectData[0].desktopTechnologies.data5;
+projectDeskTagsList2.innerHTML = projectData[0].desktopTechnologies[0].data5;
 projectDeskTags.appendChild(projectDeskTagsList2);
 const projectDeskTagsList3 = document.createElement('li');
 projectDeskTagsList3.classList.add('desktopTagsList');
-projectDeskTagsList3.innerHTML = projectData[0].desktopTechnologies.data6;
+projectDeskTagsList3.innerHTML = projectData[0].desktopTechnologies[0].data6;
 projectDeskTags.appendChild(projectDeskTagsList3);
 const projectDeskDesc = document.createElement('p');
 projectDeskDesc.classList.add('descriptionParagraph');
 projectDeskDesc.innerHTML = projectData[0].description;
 projectDeskDiv.appendChild(projectDeskDesc);
 const closeButton = document.getElementsByClassName('closeBtn');
-
-function closeDeskpop() {
-  workCard.removeChild(projectDeskDiv);
-  overlay.classList.remove('active');
-}
-
-function displayDesktopCard() {
-  workCard.appendChild(projectDeskDiv);
-  closeButton[0].addEventListener('click', closeDeskpop);
-  overlay.classList.add('active');
-}
-
-projectDetails.forEach((n) => n.addEventListener('click', displayDesktopCard));
 
 // ..........................................
 
@@ -344,7 +329,7 @@ projectSpan.innerHTML = projectData[0].popCancelBtn;
 projectDiv.appendChild(projectSpan);
 const projectImg = document.createElement('img');
 projectImg.classList.add('mProjectImg');
-projectImg.src = projectData[0].desktopPopImage;
+projectImg.src = projectData[0].mobilePopImage;
 projectDiv.appendChild(projectImg);
 const projectHeader = document.createElement('h3');
 projectHeader.classList.add('mpopPrimaryText');
@@ -355,15 +340,15 @@ projectTags.classList.add('mTags');
 projectDiv.appendChild(projectTags);
 const projectTagsList1 = document.createElement('li');
 projectTagsList1.classList.add('mTagsList');
-projectTagsList1.innerHTML = projectData[0].mobileTechnologies.data1;
+projectTagsList1.innerHTML = projectData[0].mobileTechnologies[0].data1;
 projectTags.appendChild(projectTagsList1);
 const projectTagsList2 = document.createElement('li');
 projectTagsList2.classList.add('mTagsList');
-projectTagsList2.innerHTML = projectData[0].mobileTechnologies.data2;
+projectTagsList2.innerHTML = projectData[0].mobileTechnologies[0].data2;
 projectTags.appendChild(projectTagsList2);
 const projectTagsList3 = document.createElement('li');
 projectTagsList3.classList.add('mTagsList');
-projectTagsList3.innerHTML = projectData[0].mobileTechnologies.data3;
+projectTagsList3.innerHTML = projectData[0].mobileTechnologies[0].data3;
 projectTags.appendChild(projectTagsList3);
 const projectDesc = document.createElement('p');
 projectDesc.classList.add('mdescriptionParagraph');
@@ -380,14 +365,28 @@ projectDiv.appendChild(buttonSeeSource);
 
 function closeMobilepop() {
   mworkCard.removeChild(projectDiv);
+  workCard.removeChild(projectDeskDiv);
   overlay.classList.remove('active');
 }
+const mcloseButton = document.getElementsByClassName('mcloseBtn');
 
 function displayMobileCard() {
   mworkCard.appendChild(projectDiv);
-  const mcloseButton = document.getElementsByClassName('mcloseBtn');
   mcloseButton[0].addEventListener('click', closeMobilepop);
   overlay.classList.add('active');
 }
 
+function closeDeskpop() {
+  workCard.removeChild(projectDeskDiv);
+  mworkCard.removeChild(projectDiv);
+  overlay.classList.remove('active');
+}
+
+function displayDesktopCard() {
+  workCard.appendChild(projectDeskDiv);
+  closeButton[0].addEventListener('click', closeDeskpop);
+  overlay.classList.add('active');
+}
+
 projectDetails.forEach((n) => n.addEventListener('click', displayMobileCard));
+projectDetails.forEach((n) => n.addEventListener('click', displayDesktopCard));
