@@ -24,6 +24,7 @@ body {
 .desktopTagsList {
   display: none;
 }
+
 .headBtn {
   display: none;
 }
@@ -822,14 +823,13 @@ hr {
 }
 
 .mcardContainer {
-  height: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 8px;
   z-index: 10;
   background-color: rgb(248, 242, 242);
@@ -840,7 +840,7 @@ hr {
 .mcloseBtn {
   cursor: pointer;
   font-size: 30px;
-  /* color: fff; */
+  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -849,14 +849,13 @@ hr {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 24px;
-  margin-top: 20px;
-  mix-blend-mode: none;
-  border-radius: none;
+  right: 17px;
+  margin-top: 7px;
+  border-radius: 0;
 }
 
 span .mcloseBtn {
-  color: ffffff;
+  color: white;
 }
 
 .mProjectImg {
@@ -865,6 +864,7 @@ span .mcloseBtn {
   left: 24px;
   padding: 0 24px 0 24px;
 }
+
 .mpopPrimaryText {
   width: 259px;
   height: 135px;
@@ -876,15 +876,15 @@ span .mcloseBtn {
   color: #172b4d;
   padding: 24px 12px 12px 24px;
 }
+
 .mTags {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 12px;
   list-style: none;
   padding: 0 24px 0 24px;
-  width: 246px;
+  width: 300px;
   height: 32px;
 }
 
@@ -892,17 +892,17 @@ span .mcloseBtn {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 77px;
+  width: 87px;
   height: 32px;
   justify-content: center;
   background: #ebecf0;
   border-radius: 8px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.03e;
+  letter-spacing: 0.03em;
 }
 
 .mdescriptionParagraph {
@@ -914,6 +914,10 @@ span .mcloseBtn {
   line-height: 24px;
   color: #344563;
   padding: 12px 24px 12px 24px;
+}
+
+.error {
+  color: red;
 }
 
 .mseelive {
@@ -937,8 +941,8 @@ span .mcloseBtn {
   background-repeat: no-repeat;
   background-position: right;
   margin-left: 24px;
-
   padding: 12px 24px 0 12px;
+  background-size: 16px;
 }
 
 .mseesource {
@@ -966,14 +970,26 @@ span .mcloseBtn {
   padding: 12px 24px 0 12px;
 }
 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background: #c1c7d0;
+  pointer-events: none;
+  width: 1440px;
+  height: 100%;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: none;
   }
-
-  /* .primary-headline {
-    display: none;
-  } */
 
   .hidden-menu {
     display: none;
@@ -1321,24 +1337,21 @@ span .mcloseBtn {
   .cardContainer {
     display: block;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #ffffff;
-    border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 8px;
-    z-index: 10;
-    background-color: rgb(248, 242, 242);
     width: 920px;
-    height: 1083px;
+    height: 100%;
+    background: #fff;
+    top: 2%;
+    left: 15%;
+    bottom: 1%;
+    overflow-y: scroll;
+    margin-bottom: 100px;
   }
 
   .closeBtn {
     display: block;
     cursor: pointer;
+    color: gray;
     font-size: 2.75rem;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -1347,10 +1360,8 @@ span .mcloseBtn {
     width: 40px;
     height: 40px;
     right: 24px;
-    /* top: calc(50% - 40px / 2 - 497.5px); */
-    top: 30px;
+    top: 20px;
     background: #ebecf0;
-    mix-blend-mode: multiply;
     border-radius: 8px;
   }
 
@@ -1358,10 +1369,12 @@ span .mcloseBtn {
     display: block;
     width: 872px;
     height: 616px;
-    left: 24px;
-    margin-top: 78px;
-    padding: 24px 24px 0 24px;
+    padding-left: 24px;
+    padding-top: 78px;
+    padding-right: 24px;
+    background-attachment: fixed;
   }
+
   .popPrimaryText {
     display: block;
     width: 589px;
@@ -1373,12 +1386,12 @@ span .mcloseBtn {
     line-height: 44px;
     color: #172b4d;
   }
+
   .desktopTags {
     display: block;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 12px;
     list-style: none;
     padding: 0 24px 0 24px;
@@ -1394,18 +1407,18 @@ span .mcloseBtn {
     height: 32px;
     background: #ebecf0;
     border-radius: 8px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.03e;
+    letter-spacing: 0.03em;
   }
 
   .descriptionParagraph {
     display: block;
     width: 876px;
-    height: 151px;
+    height: 150px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1423,12 +1436,12 @@ span .mcloseBtn {
     gap: 12px;
     width: 869px;
     height: 82px;
-    left: 26px;
-    top: 718px;
   }
 
   .seelive {
     display: block;
+    flex-direction: row;
+    align-items: center;
     width: 115px;
     height: 48px;
     background: #36b37e;
@@ -1436,7 +1449,6 @@ span .mcloseBtn {
     bottom: 24px;
     border: none;
     gap: 12px;
-    align-items: center;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1447,11 +1459,13 @@ span .mcloseBtn {
     color: #fff;
     background-image: url(image/Icon\ -\ Export.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 94px;
+    background-size: 16px;
   }
 
   .seesource {
     display: block;
+    flex-direction: row;
     width: 141px;
     height: 48px;
     background: #36b37e;
@@ -1471,7 +1485,8 @@ span .mcloseBtn {
     color: #fff;
     background-image: url(image/VectorSource.png);
     background-repeat: no-repeat;
-    background-position: 115px;
+    background-position: 120px;
+    background-size: 16px;
   }
 
   .mcardContainer {
@@ -1489,6 +1504,7 @@ span .mcloseBtn {
   .mTagsList {
     display: none;
   }
+
   .mheadBtn {
     display: none;
   }
@@ -1500,4 +1516,5 @@ span .mcloseBtn {
   .mdescriptionParagraph {
     display: none;
   }
+
 }
