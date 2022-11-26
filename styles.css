@@ -9,6 +9,34 @@ body {
   overflow-x: hidden;
 }
 
+.cardContainer {
+  display: none;
+}
+
+.deskProjectImg {
+  display: none;
+}
+
+.desktopTags {
+  display: none;
+}
+
+.desktopTagsList {
+  display: none;
+}
+
+.headBtn {
+  display: none;
+}
+
+.popPrimaryText {
+  display: none;
+}
+
+.descriptionParagraph {
+  display: none;
+}
+
 .desktop-nav {
   display: none;
 }
@@ -609,7 +637,7 @@ body {
 }
 
 .contact h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -632,7 +660,7 @@ body {
 }
 
 ::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -715,7 +743,7 @@ body {
   background: #36b37f;
   border: none;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -730,7 +758,7 @@ hr {
 }
 
 .contact-social .footer-email a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -776,7 +804,7 @@ hr {
 
 .footer-email {
   height: 180px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -794,14 +822,170 @@ hr {
   display: none;
 }
 
+.mcardContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 8px;
+  z-index: 10;
+  background-color: rgb(248, 242, 242);
+  width: 343px;
+  height: 836px;
+}
+
+.mcloseBtn {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 17px;
+  margin-top: 7px;
+  border-radius: 0;
+}
+
+span .mcloseBtn {
+  color: white;
+}
+
+.mProjectImg {
+  width: 311px;
+  height: 229px;
+  left: 24px;
+  padding: 0 24px 0 24px;
+}
+
+.mpopPrimaryText {
+  width: 259px;
+  height: 135px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 24px 12px 12px 24px;
+}
+
+.mTags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0 24px 0 24px;
+  width: 300px;
+  height: 32px;
+}
+
+.mTagsList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 87px;
+  height: 32px;
+  justify-content: center;
+  background: #ebecf0;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.mdescriptionParagraph {
+  width: 311px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding: 12px 24px 12px 24px;
+}
+
+.mseelive {
+  width: 115px;
+  height: 48px;
+  background: #36b37e;
+  border-radius: 8px;
+  bottom: 24px;
+  border: none;
+  gap: 12px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-image: url(image/Icon\ -\ Export.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-left: 24px;
+  padding: 12px 24px 0 12px;
+  background-size: 16px;
+}
+
+.mseesource {
+  width: 141px;
+  height: 48px;
+  background: #36b37e;
+  right: 50%;
+  bottom: 24px;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-image: url(image/VectorSource.png);
+  background-repeat: no-repeat;
+  background-position: 115px;
+  margin-left: 12px;
+  padding: 12px 24px 0 12px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background: #c1c7d0;
+  pointer-events: none;
+  width: 1440px;
+  height: 100%;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: none;
   }
-
-  /* .primary-headline {
-    display: none;
-  } */
 
   .hidden-menu {
     display: none;
@@ -856,7 +1040,7 @@ hr {
   }
 
   #desktop-headline h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -882,7 +1066,7 @@ hr {
   }
 
   #desktop-headline p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1143,6 +1327,189 @@ hr {
   }
 
   #footer-image {
+    display: none;
+  }
+
+  .cardContainer {
+    display: block;
+    position: fixed;
+    width: 920px;
+    height: 100%;
+    background: #fff;
+    top: 2%;
+    left: 15%;
+    bottom: 1%;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+  }
+
+  .closeBtn {
+    display: block;
+    cursor: pointer;
+    color: gray;
+    font-size: 2.75rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    top: 20px;
+    background: #ebecf0;
+    border-radius: 8px;
+  }
+
+  .deskProjectImg {
+    display: block;
+    width: 872px;
+    height: 616px;
+    padding-left: 24px;
+    padding-top: 78px;
+    padding-right: 24px;
+    background-attachment: fixed;
+  }
+
+  .popPrimaryText {
+    display: block;
+    width: 589px;
+    height: 82px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .desktopTags {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0 24px 0 24px;
+  }
+
+  .desktopTagsList {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    width: 67px;
+    height: 32px;
+    background: #ebecf0;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  .descriptionParagraph {
+    display: block;
+    width: 876px;
+    height: 150px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    padding: 24px 24px 20px 24px;
+  }
+
+  .headBtn {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap: 12px;
+    width: 869px;
+    height: 82px;
+  }
+
+  .seelive {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    width: 115px;
+    height: 48px;
+    background: #36b37e;
+    border-radius: 8px;
+    bottom: 24px;
+    border: none;
+    gap: 12px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background-image: url(image/Icon\ -\ Export.png);
+    background-repeat: no-repeat;
+    background-position: 94px;
+    background-size: 16px;
+  }
+
+  .seesource {
+    display: block;
+    flex-direction: row;
+    width: 141px;
+    height: 48px;
+    background: #36b37e;
+    right: 50%;
+    bottom: 24px;
+    border: none;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background-image: url(image/VectorSource.png);
+    background-repeat: no-repeat;
+    background-position: 120px;
+    background-size: 16px;
+  }
+
+  .mcardContainer {
+    display: none;
+  }
+
+  .mProjectImg {
+    display: none;
+  }
+
+  .mTags {
+    display: none;
+  }
+
+  .mTagsList {
+    display: none;
+  }
+
+  .mheadBtn {
+    display: none;
+  }
+
+  .mpopPrimaryText {
+    display: none;
+  }
+
+  .mdescriptionParagraph {
     display: none;
   }
 }
