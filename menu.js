@@ -401,7 +401,7 @@ const contactForm = document.querySelector('#form');
 const formInput = document.querySelector('.form-btn');
 const error = document.querySelector('.error');
 
-form.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', (e) => {
   const emailValue = email.value;
   let flag = 0;
   for (let i = 0; i < emailValue.length; i += 1) {
